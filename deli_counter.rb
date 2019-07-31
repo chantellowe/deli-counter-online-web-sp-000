@@ -15,5 +15,9 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, name)
-  katz_deli.push("#{name}")
+  #new_customer = []
+  katz_deli.each.with_index(1) do |name, index|
+ # new_customer.push("#{name}")
+  puts "Welcome, #{name}. You are number #{index} in line."
+  end
 end
