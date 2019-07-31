@@ -10,7 +10,7 @@ def line(katz_deli)
     katz_deli.each.with_index(1) do |name, index|
       people_in_line.push("#{index}. #{name}")
     end
-    puts "The line is currently: #{index}"
+    puts "The line is currently: #{people_in_line.join(" ")}"
     end
 end
 
